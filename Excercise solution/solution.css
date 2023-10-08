@@ -1,0 +1,65 @@
+/* Add colorful side designs */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Left side design */
+.left-design {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(90deg, #FF5733, #FFC300);
+}
+
+/* Right side design */
+.right-design {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(90deg, #33FF57, #33FFEC);
+}
+
+/* Reset default styles */
+h1, video, audio {
+    margin: 0;
+    padding: 0;
+}
+
+/* Rest of your existing styles (from the previous example) */
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
