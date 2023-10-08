@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <header>
+        <h1>Here you can watch Sigma males and listen to their Songs #SigmaBatchOP</h1>
+    </header>
+
+    <main>
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma1.mp4" type="video/mp4">
+            </video>
+        </section>
+      
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma2.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma3.mp4" type="video/mp4">
+            </video>
+        </section>
+        
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma4.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma5.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <video width="490" height="400" controls>
+                <source src="Sigma6.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <audio src="Sigma1.mp3" controls></audio>
+        </section>
+
+        <section>
+            <audio src="Sigma2.mp3" controls></audio> 
+        </section>
+
+        <section>
+            <audio src="Sigma3.mp3" controls></audio> 
+        </section>
+
+        <section>
+            <audio src="Sigma4.mp3" controls></audio> 
+        </section>
+
+        <section>
+            <audio src="Sigma5.mp3" controls></audio> 
+        </section>
+
+        <section>
+            <audio src="Sigma6.mp3" controls></audio> 
+        </section>
+    </main>
+
+    <script>
+        const mediaElements = document.querySelectorAll('video, audio');
+
+        mediaElements.forEach((mediaElement) => {
+            mediaElement.addEventListener('play', (event) => {
+                const currentMedia = event.target;
+                mediaElements.forEach((element) => {
+                    if (element !== currentMedia) {
+                        element.pause();
+                    }
+                });
+            });
+        });
+        //This Script allows you to play one media at a time.
+    </script>
+
+                 <!-- This code is written by Anonymous :) -->
+
+</body>
+</html>
